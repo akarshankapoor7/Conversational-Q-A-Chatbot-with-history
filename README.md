@@ -43,8 +43,11 @@ Install the necessary dependencies:
 bash
 Copy
 Edit
+
 pip install langchain langchain_community chromadb faiss-cpu openai tiktoken python-dotenv
+
 Additional Libraries (as per your use case):
+
 Vector storage → chromadb (or faiss-cpu as an alternative)
 
 Embeddings → huggingface
@@ -59,24 +62,32 @@ To use Grok AI and Hugging Face, obtain API keys from:
 🔑 Hugging Face API Key → Hugging Face Tokens
 
 Store API Keys Securely
+
 Create a .env file in your project directory and add:
 
 ini
 Copy
 Edit
+
 GROQ_API_KEY=your_groq_api_key_here
+
 HUGGINGFACE_API_KEY=your_huggingface_api_key_here
+
 Load API Keys in Code
 python
 Copy
 Edit
+
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+
+
 4️⃣ Knowledge Base & Data
 📂 Dataset for retrieval → PDFs, text files, or structured documents
 
