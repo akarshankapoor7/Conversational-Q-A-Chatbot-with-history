@@ -1,4 +1,4 @@
-This Conversational Q&A Chatbot is a Generative AI project built using LangChain to enable intelligent, context-aware interactions. The chatbot retains memory of past exchanges, ensuring a seamless and coherent conversation flow.
+This Conversational Q&A Chatbot is a Generative AI project built using LangChain (with llama3-8b-8192 model) to enable intelligent, context-aware interactions. The chatbot retains memory of past exchanges, ensuring a seamless and coherent conversation flow.
 
 To incorporate chat history effectively, the project implements two approaches:
 
