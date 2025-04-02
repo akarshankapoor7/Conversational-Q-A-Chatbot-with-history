@@ -1,0 +1,14 @@
+langchain
+langchain_community
+langchain_huggingface
+langchain_groq
+langsmith
+lagchain_core
+chromadb
+faiss
+bs4
+huggingface 
+langserve
+fastapi
+python-dotenv
+python==3.10.12
