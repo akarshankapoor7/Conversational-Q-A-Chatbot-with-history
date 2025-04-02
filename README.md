@@ -16,43 +16,56 @@ By leveraging LangChain's retrieval-augmented generation (RAG) capabilities, the
 ---------------------------------------------------------------------------------------------
 
 Pre-requisites
+
 Before running this Conversational Q&A Chatbot, ensure you have the following:
 
 1. Environment Setup
+   
 Python 3.8+
 
 Virtual environment (recommended) → venv or conda
 
+
 2. Required Libraries
+   
 Install dependencies using:
 
-bash
-Copy
-Edit
+
 pip install langchain langchain_community chromadb faiss-cpu openai tiktoken python-dotenv
+
 Additional libraries based on your use case:
 
 For vector storage: chromadb (or faiss-cpu as an alternative)
 
-For embeddings: sentence-transformers or openai
+For embeddings: huggingface
+
 
 For LLM integration: openai, ollama, groq, or huggingface_hub
 
+
 3. Generate and Store API Keys
+4. 
 To use Grok AI and Hugging Face, generate API keys from:
+
 
 Grok AI API Key → Obtain from Grok AI Developer Portal
 
+
 Hugging Face API Key → Obtain from Hugging Face
 
+
 Store them securely in a .env file in your project directory:
+
 
 ini
 Copy
 Edit
+
 GROQ_API_KEY=your_groq_api_key_here
+
 HUGGINGFACE_API_KEY=your_huggingface_api_key_here
 Load them in your Python script using:
+
 
 python
 Copy
@@ -62,11 +75,17 @@ import os
 
 load_dotenv()
 
+
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+
 4. Knowledge Base & Data
+   
 A document dataset for retrieval (e.g., PDFs, text files)
 
+
 Preprocessed embeddings for efficient search
+
 
 With these pre-requisites set up, you can run the chatbot and enable context-aware Q&A! 🚀
